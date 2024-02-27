@@ -348,7 +348,7 @@ export default class extends Component {
                 ? { x: 0, y: this.state.height, animated: false }
                 : { x: this.state.width, y: 0, animated: false }
             )
-          } else if (this.state.index === this.state.total - 1) {
+          } else if (this.state.index === this.state.total - 1 && this.scrollView != null) {
             this.props.horizontal === false
               ? this.scrollView.scrollTo({
                   x: 0,
